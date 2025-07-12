@@ -1,0 +1,33 @@
+
+@host=http://localhost:3000/users
+
+
+GET {{ host }} HTTP/1.1
+###
+
+GET {{ host }}/3 HTTP/1.1
+###
+
+POST {{ host }} HTTP/1.1
+Content-Type: application/json
+
+{
+     "nombre": "oscar",
+     "email": "moscar.chs@correo.com",
+     "tipo": "docente"
+}
+###
+
+PATCH {{ host }}/17 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":17,
+    "nombre": "Carla Solis",
+    "email": "carla.solis@example.com",
+    "tipo": "alumno"
+}
+###
+
+DELETE {{ host }}/19 HTTP/1.1
+
