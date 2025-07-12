@@ -42,6 +42,18 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+#instalar proyecto con nest
+$ npm nest gateways
+
+#instalar 
+$ npm install @nestjs/microservice/microservice
+
+#instalar 
+$ npm install class-validator class-transformer
+#instalar 
+$ npm install joi
+
 ```
 
 ## Run tests
